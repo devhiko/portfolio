@@ -7,10 +7,10 @@ import Navbar from "react-bootstrap/Navbar";
 export const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <div>
-      <Navbar bg="dark" variant="dark" expand="lg" style={{ padding: "1rem", borderBottom: "1px solid #a3a3a3" }}>
+      <Navbar bg="dark" variant="dark" expand="lg" style={{ padding: "1rem", borderBottom: "1px solid #030303" }}>
         <Container>
-          <Navbar.Brand href="/" style={{ color: "#0dcaf0" }}>
-            My Portfolio
+          <Navbar.Brand href="/" style={{ color: "#0dcaf0", marginRight: "2rem" }}>
+            My <br /> Portfolio
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -20,19 +20,19 @@ export const Layout = ({ children }: { children: ReactNode }) => {
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
-            <Button as="a" href="#resume" variant="outline-info">
-              Resume
-            </Button>
           </Navbar.Collapse>
+          <Button style={{ borderRadius: 0 }} variant="outline-info">
+            GitHub
+          </Button>
         </Container>
       </Navbar>
 
       <div>{children}</div>
 
-      <Navbar bg="dark" expand="lg" variant="dark" style={{ padding: "1rem" }}>
+      <Navbar bg="dark" expand="lg" variant="dark" style={{ padding: "1rem", borderTop: "1px solid #030303" }}>
         <Container style={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
-          <Navbar.Brand href="/" style={{ color: "#0dcaf0" }}>
-            My Portfolio
+          <Navbar.Brand href="/" style={{ color: "#b3b3b3" }}>
+            Designed and developed by <span className="text-[#0dcaf0]">me</span>
           </Navbar.Brand>
         </Container>
       </Navbar>
