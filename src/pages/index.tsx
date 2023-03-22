@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Button } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>page content</div>
+
+      <Button variant="primary">Primary</Button>
     </>
   );
 }
