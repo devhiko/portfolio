@@ -6,7 +6,8 @@ import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import ListGroup from "react-bootstrap/ListGroup";
 
-// TODO: DEVAM
+// TODO: RESPONSIVE <---
+// TODO: CODE_SPLIT / OPTIMIZATION
 
 export default function Home() {
   return (
@@ -220,102 +221,126 @@ export default function Home() {
         <h3 className="mb-4">My Projects</h3>
         <CardGroup className="gap-x-6 px-2 flex flex-col">
           {/* // ! make here border: dark */}
-          <Card bg="dark" border="secondary" style={{ width: "20rem", marginBottom: "1rem", padding: "1rem" }}>
-            <Card.Img variant="top" className="rounded-lg" src="holder.js/100px180?text=Image cap" />
+          <Card bg="dark" border="info" style={{ width: "20rem", marginBottom: "1rem", padding: "1rem" }}>
+            <Card.Img variant="top" className="rounded-lg" src="/recipe.png" width={100} height={180} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of the cards content.
-              </Card.Text>
+              <Card.Title>Recipe App</Card.Title>
+              <Card.Text>Some food recipes app with PWA and Firebase for viewing food recipes</Card.Text>
             </Card.Body>
             <ListGroup variant="flush">
-              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>JS</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Javascript</ListGroup.Item>
               <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Firebase</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>PWA</ListGroup.Item>
             </ListGroup>
             <Card.Body className="mt-2 flex flex-row gap-x-2 justify-center">
-              <Card.Link href="#">
+              <Card.Link href="https://github.com/devhiko/recipes-pwa">
                 <Button style={{ borderRadius: 0 }} variant="outline-info">
-                  View Source
+                  Source
                 </Button>
               </Card.Link>
-              <Card.Link href="#">
+              <Card.Link href="https://food-ninja-pwa-37ba7.firebaseapp.com/">
                 <Button style={{ borderRadius: 0 }} variant="outline-info">
-                  View Project
+                  Project
                 </Button>
               </Card.Link>
             </Card.Body>
           </Card>
-          <Card bg="dark" border="secondary" style={{ width: "20rem", marginBottom: "1rem", padding: "1rem" }}>
-            <Card.Img variant="top" className="rounded-lg" src="holder.js/100px180?text=Image cap" />
+
+          <Card bg="dark" border="info" style={{ width: "20rem", marginBottom: "1rem", padding: "1rem" }}>
+            <Card.Img variant="top" className="rounded-lg" src="/todo.png" width={100} height={180} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of the cards content.
-              </Card.Text>
+              <Card.Title>Todo App</Card.Title>
+              <Card.Text>Some Todo app with React and Typescript for tracking todos</Card.Text>
             </Card.Body>
             <ListGroup variant="flush">
-              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>JS</ListGroup.Item>
-              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Firebase</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>CSS</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Typescript</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>React</ListGroup.Item>
             </ListGroup>
             <Card.Body className="mt-2 flex flex-row gap-x-2 justify-center">
-              <Card.Link href="#">
+              <Card.Link href="https://github.com/devhiko/todo-app-rct-ts">
                 <Button style={{ borderRadius: 0 }} variant="outline-info">
-                  View Source
+                  Source
                 </Button>
               </Card.Link>
-              <Card.Link href="#">
+              <Card.Link href="https://todo-app-rct-ts.vercel.app/">
                 <Button style={{ borderRadius: 0 }} variant="outline-info">
-                  View Project
+                  Project
                 </Button>
               </Card.Link>
             </Card.Body>
           </Card>
-          <Card bg="dark" border="secondary" style={{ width: "20rem", marginBottom: "1rem", padding: "1rem" }}>
-            <Card.Img variant="top" className="rounded-lg" src="holder.js/100px180?text=Image cap" />
+
+          <Card bg="dark" border="info" style={{ width: "20rem", marginBottom: "1rem", padding: "1rem" }}>
+            <Card.Img variant="top" className="rounded-lg" src="/kiratakip.png" width={100} height={180} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of the cards content.
-              </Card.Text>
+              <Card.Title>Kiratakip App</Card.Title>
+              <Card.Text>Some rent track app for tracking rents and tenants</Card.Text>
             </Card.Body>
             <ListGroup variant="flush">
-              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>JS</ListGroup.Item>
-              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Firebase</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Typescript</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Next.js</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Contentful</ListGroup.Item>
             </ListGroup>
             <Card.Body className="mt-2 flex flex-row gap-x-2 justify-center">
-              <Card.Link href="#">
+              <Card.Link href="https://github.com/devhiko/kiratakip">
                 <Button style={{ borderRadius: 0 }} variant="outline-info">
-                  View Source
+                  Source
                 </Button>
               </Card.Link>
-              <Card.Link href="#">
+              <Card.Link href="https://kiratakip.vercel.app/">
                 <Button style={{ borderRadius: 0 }} variant="outline-info">
-                  View Project
+                  Project
                 </Button>
               </Card.Link>
             </Card.Body>
           </Card>
-          <Card bg="dark" border="secondary" style={{ width: "20rem", marginBottom: "1rem", padding: "1rem" }}>
-            <Card.Img variant="top" className="rounded-lg" src="holder.js/100px180?text=Image cap" />
+
+          <Card bg="dark" border="info" style={{ width: "20rem", marginBottom: "1rem", padding: "1rem" }}>
+            <Card.Img variant="top" className="rounded-lg" src="/dialer.png" width={100} height={180} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of the cards content.
-              </Card.Text>
+              <Card.Title>Dialer App</Card.Title>
+              <Card.Text>Some dialer phone app with Next.js, Redux and Typescript.</Card.Text>
             </Card.Body>
             <ListGroup variant="flush">
-              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>JS</ListGroup.Item>
-              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Firebase</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Next.js</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Redux</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Typescript</ListGroup.Item>
             </ListGroup>
             <Card.Body className="mt-2 flex flex-row gap-x-2 justify-center">
-              <Card.Link href="#">
+              <Card.Link href="https://github.com/devhiko/dialer">
                 <Button style={{ borderRadius: 0 }} variant="outline-info">
-                  View Source
+                  Source
                 </Button>
               </Card.Link>
-              <Card.Link href="#">
+              <Card.Link href="https://dialer-devhiko.vercel.app/kisiler">
                 <Button style={{ borderRadius: 0 }} variant="outline-info">
-                  View Project
+                  Project
+                </Button>
+              </Card.Link>
+            </Card.Body>
+          </Card>
+
+          <Card bg="dark" border="info" style={{ width: "20rem", marginBottom: "1rem", padding: "1rem" }}>
+            <Card.Img variant="top" className="rounded-lg" src="/musix.png" width={100} height={180} />
+            <Card.Body>
+              <Card.Title>Musix App</Card.Title>
+              <Card.Text>Some musix phone app with React Native, Typescript and Tailwind.</Card.Text>
+            </Card.Body>
+            <ListGroup variant="flush">
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>React Native</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Tailwind</ListGroup.Item>
+              <ListGroup.Item style={{ background: "#212529", color: "#9ca3af" }}>Typescript</ListGroup.Item>
+            </ListGroup>
+            <Card.Body className="mt-2 flex flex-row gap-x-2 justify-center">
+              <Card.Link href="https://github.com/devhiko/musixapp">
+                <Button style={{ borderRadius: 0 }} variant="outline-info">
+                  Source
+                </Button>
+              </Card.Link>
+              <Card.Link href="https://github.com/devhiko/musixapp">
+                <Button style={{ borderRadius: 0 }} variant="outline-info">
+                  Project
                 </Button>
               </Card.Link>
             </Card.Body>
