@@ -18,7 +18,6 @@ export const Layout = ({ children }: { children: ReactNode }) => {
           <Navbar.Brand href="/" style={{ color: "#0dcaf0", marginRight: "2rem" }}>
             My <br /> Portfolio
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
@@ -32,6 +31,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
               GitHub
             </Button>
           </Link>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </Container>
       </Navbar>
 
